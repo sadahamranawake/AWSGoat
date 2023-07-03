@@ -3628,6 +3628,9 @@ resource "aws_dynamodb_table" "posts_table" {
     name = "id"
     type = "S"
   }
+  point_in_time_recovery {
+    enabled = true
+  }
 }
 
 
